@@ -2,8 +2,7 @@ body {
   margin: 0;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   font-family: Arial;
 }
@@ -124,4 +123,33 @@ body.light .equal {
 body.light #display {
   background: #f1f5f9;
   color: black;
+}
+
+.visitor-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.visitor-box img {
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.visitor-box img:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 13px;
+  color: hsl(0, 0%, 0%);
+  border-top: 1px solid #eee;
+  opacity: 0.8;
+}
+footer:hover {
+  opacity: 1;
+  transition: 0.3s;
 }
